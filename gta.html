@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTA - Central Gamer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        header {
+            background: linear-gradient(135deg, #111111, #a00000);
+            color: white;
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+
+        nav {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: #d00000;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #1a1a1a, #c00000);
+            color: white;
+            text-align: center;
+            padding: 85px 20px;
+        }
+
+        .hero h2 {
+            font-size: 50px;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        .conteudo {
+            max-width: 1150px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .introducao {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 45px;
+            border-left: 6px solid #a00000;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .introducao h2 {
+            color: #a00000;
+            margin-bottom: 15px;
+        }
+
+        .introducao p {
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .conteudo > h2 {
+            text-align: center;
+            margin-bottom: 35px;
+            font-size: 32px;
+            color: #a00000;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            border-top: 5px solid #a00000;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 10px 25px rgba(160, 0, 0, 0.25);
+        }
+
+        .card h3 {
+            color: #a00000;
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+
+        .card p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .destaque {
+            margin-top: 50px;
+            padding: 35px;
+            background: linear-gradient(135deg, #1a1a1a, #c00000);
+            color: white;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .destaque h2 {
+            margin-bottom: 15px;
+            font-size: 30px;
+        }
+
+        .destaque p {
+            line-height: 1.7;
+        }
+
+        .voltar {
+            display: block;
+            width: fit-content;
+            margin: 45px auto;
+            padding: 14px 25px;
+            background: #a00000;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .voltar:hover {
+            background: #111111;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #111111;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .hero h2 {
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Central Gamer</h1>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="minecraft.html">Minecraft</a>
+            <a href="gta.html">GTA</a>
+            <a href="roblox.html">Roblox</a>
+            <a href="terraria.html">Terraria</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Grand Theft Auto</h2>
+
+        <p>
+            Curiosidades, fatos e informações interessantes
+            sobre a série GTA.
+        </p>
+    </section>
+
+    <section class="conteudo">
+
+        <div class="introducao">
+            <h2>Sobre GTA</h2>
+
+            <p>
+                Grand Theft Auto, conhecido como GTA, é uma série de jogos
+                de ação e aventura conhecida por seus mundos abertos,
+                personagens, veículos e histórias.
+            </p>
+        </div>
+
+        <h2>Curiosidades sobre GTA</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>O significado de GTA</h3>
+                <p>
+                    GTA significa Grand Theft Auto, expressão relacionada
+                    ao roubo de veículos.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>GTA V</h3>
+                <p>
+                    GTA V possui três protagonistas principais:
+                    Michael, Franklin e Trevor.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Los Santos</h3>
+                <p>
+                    A cidade de Los Santos, presente em GTA V,
+                    foi inspirada principalmente em Los Angeles.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>GTA Online</h3>
+                <p>
+                    GTA Online permite que jogadores explorem o mundo
+                    de GTA V e participem de diversas atividades.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Rádios</h3>
+                <p>
+                    Os jogos da série possuem diversas estações de rádio
+                    que podem ser ouvidas enquanto o jogador dirige.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Mundo aberto</h3>
+                <p>
+                    GTA permite explorar grandes mapas livremente,
+                    encontrando personagens, veículos e atividades.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Veículos</h3>
+                <p>
+                    A série possui carros, motos, barcos, helicópteros,
+                    aviões e vários outros tipos de veículos.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Personagens</h3>
+                <p>
+                    A franquia possui diversos personagens marcantes,
+                    cada um com suas próprias histórias e características.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>GTA San Andreas</h3>
+                <p>
+                    GTA San Andreas apresenta o personagem Carl Johnson,
+                    conhecido como CJ, como protagonista.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>GTA Vice City</h3>
+                <p>
+                    GTA Vice City apresenta uma ambientação inspirada
+                    na cidade de Miami durante a década de 1980.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Missões</h3>
+                <p>
+                    Os jogos possuem missões principais e atividades
+                    secundárias que ajudam a desenvolver suas histórias.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Mapas</h3>
+                <p>
+                    Cada jogo possui seu próprio mapa, com cidades,
+                    estradas, áreas rurais e diferentes locais para explorar.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="destaque">
+            <h2>Você sabia?</h2>
+
+            <p>
+                A série GTA ficou conhecida por combinar exploração de
+                mundo aberto, veículos, personagens e histórias em mapas
+                grandes e cheios de atividades.
+            </p>
+        </div>
+
+        <a class="voltar" href="index.html">
+            Voltar para a página inicial
+        </a>
+
+    </section>
+
+    <footer>
+        <p>Central Gamer — Curiosidades e informações sobre jogos</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant - Central Gamer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f3ff;
+            color: #222;
+        }
+
+        header {
+            background: linear-gradient(135deg, #5b21b6, #9333ea);
+            color: white;
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,.2);
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+
+        nav {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 14px;
+            border-radius: 8px;
+        }
+
+        nav a:hover {
+            background: #7e22ce;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #6c2bd9, #9b4dff);
+            color: white;
+            text-align: center;
+            padding: 90px 20px;
+        }
+
+        .hero h2 {
+            font-size: 52px;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            max-width: 750px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        .conteudo {
+            max-width: 1150px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .introducao {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 45px;
+            border-left: 6px solid #7c3aed;
+            box-shadow: 0 5px 20px rgba(0,0,0,.08);
+        }
+
+        .introducao h2,
+        .conteudo > h2 {
+            color: #6c2bd9;
+        }
+
+        .introducao h2 {
+            margin-bottom: 15px;
+        }
+
+        .introducao p {
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .conteudo > h2 {
+            text-align: center;
+            margin-bottom: 35px;
+            font-size: 32px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            border-top: 5px solid #9333ea;
+            box-shadow: 0 5px 20px rgba(0,0,0,.1);
+            transition: .3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 10px 25px rgba(108,43,217,.25);
+        }
+
+        .card h3 {
+            color: #6c2bd9;
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+
+        .card p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .destaque {
+            margin-top: 50px;
+            padding: 35px;
+            background: linear-gradient(135deg, #6c2bd9, #9333ea);
+            color: white;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .destaque h2 {
+            margin-bottom: 15px;
+            font-size: 30px;
+        }
+
+        .destaque p {
+            line-height: 1.7;
+        }
+
+        .voltar {
+            display: block;
+            width: fit-content;
+            margin: 45px auto;
+            padding: 14px 25px;
+            background: #6c2bd9;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+        @media(max-width:700px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .hero h2 {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Central Gamer</h1>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="minecraft.html">Minecraft</a>
+        <a href="gta.html">GTA</a>
+        <a href="roblox.html">Roblox</a>
+        <a href="terraria.html">Terraria</a>
+        <a href="fortnite.html">Fortnite</a>
+        <a href="freefire.html">Free Fire</a>
+        <a href="brawlstars.html">Brawl Stars</a>
+        <a href="valorant.html">Valorant</a>
+        <a href="cs2.html">CS2</a>
+        <a href="amongus.html">Among Us</a>
+        <a href="pokemon.html">Pokémon</a>
+        <a href="lol.html">LoL</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Valorant</h2>
+    <p>Curiosidades, fatos e informações interessantes sobre Valorant.</p>
+</section>
+
+<section class="conteudo">
+
+    <div class="introducao">
+        <h2>Sobre Valorant</h2>
+        <p>
+            Valorant é um jogo competitivo de tiro tático desenvolvido
+            pela Riot Games, combinando armas e habilidades de agentes.
+        </p>
+    </div>
+
+    <h2>Curiosidades sobre Valorant</h2>
+
+    <div class="cards">
+
+        <div class="card"><h3>Desenvolvimento</h3><p>Valorant foi desenvolvido e publicado pela Riot Games.</p></div>
+
+        <div class="card"><h3>Lançamento</h3><p>O jogo foi lançado oficialmente em 2020.</p></div>
+
+        <div class="card"><h3>Agentes</h3><p>Os personagens jogáveis são chamados de Agentes e possuem habilidades próprias.</p></div>
+
+        <div class="card"><h3>Mapas</h3><p>As partidas acontecem em mapas com diferentes layouts e pontos estratégicos.</p></div>
+
+        <div class="card"><h3>Armas</h3><p>O arsenal inclui diferentes categorias de armas com características próprias.</p></div>
+
+        <div class="card"><h3>Rodadas</h3><p>As partidas são divididas em rodadas e exigem planejamento.</p></div>
+
+        <div class="card"><h3>Economia</h3><p>Os jogadores administram créditos para comprar armas e equipamentos.</p></div>
+
+        <div class="card"><h3>Ataque e defesa</h3><p>As equipes alternam entre funções de ataque e defesa ao longo da partida.</p></div>
+
+        <div class="card"><h3>Habilidades</h3><p>As habilidades dos Agentes podem alterar as possibilidades táticas de uma rodada.</p></div>
+
+        <div class="card"><h3>Competitivo</h3><p>Valorant possui modos competitivos e uma cena de esports.</p></div>
+
+        <div class="card"><h3>Atualizações</h3><p>Novos agentes, mapas e ajustes podem ser adicionados ao jogo.</p></div>
+
+        <div class="card"><h3>Estratégia</h3><p>Comunicação e coordenação são elementos importantes do jogo.</p></div>
+
+    </div>
+
+    <div class="destaque">
+        <h2>Você sabia?</h2>
+        <p>
+            Valorant mistura tiro tático com habilidades de agentes,
+            criando situações em que mira, posicionamento e estratégia trabalham juntos.
+        </p>
+    </div>
+
+    <a class="voltar" href="index.html">Voltar para a página inicial</a>
+
+</section>
+
+<footer>
+    <p>Central Gamer — Curiosidades e informações sobre jogos</p>
+</footer>
+
+</body>
+</html>

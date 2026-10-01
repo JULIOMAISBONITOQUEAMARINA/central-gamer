@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft - Central Gamer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f1f8f1;
+            color: #222;
+        }
+
+        header {
+            background: linear-gradient(135deg, #145a24, #42a84f);
+            color: white;
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+
+        nav {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 8px;
+        }
+
+        nav a:hover {
+            background: #2e7d32;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #174d20, #4caf50);
+            color: white;
+            text-align: center;
+            padding: 85px 20px;
+        }
+
+        .hero h2 {
+            font-size: 50px;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        .conteudo {
+            max-width: 1150px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .introducao {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 45px;
+            border-left: 6px solid #2e7d32;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .introducao h2 {
+            color: #2e7d32;
+            margin-bottom: 15px;
+        }
+
+        .introducao p {
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .conteudo > h2 {
+            text-align: center;
+            margin-bottom: 35px;
+            font-size: 32px;
+            color: #2e7d32;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            border-top: 5px solid #2e7d32;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+        }
+
+        .card h3 {
+            color: #2e7d32;
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+
+        .card p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .destaque {
+            margin-top: 50px;
+            padding: 35px;
+            background: linear-gradient(135deg, #174d20, #42a84f);
+            color: white;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .destaque h2 {
+            margin-bottom: 15px;
+            font-size: 30px;
+        }
+
+        .destaque p {
+            line-height: 1.7;
+        }
+
+        .voltar {
+            display: block;
+            width: fit-content;
+            margin: 45px auto;
+            padding: 14px 25px;
+            background: #2e7d32;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .voltar:hover {
+            background: #174d20;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .hero h2 {
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Central Gamer</h1>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="minecraft.html">Minecraft</a>
+            <a href="gta.html">GTA</a>
+            <a href="roblox.html">Roblox</a>
+            <a href="terraria.html">Terraria</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Minecraft</h2>
+
+        <p>
+            Curiosidades, fatos e informações interessantes
+            sobre Minecraft.
+        </p>
+    </section>
+
+    <section class="conteudo">
+
+        <div class="introducao">
+            <h2>Sobre Minecraft</h2>
+
+            <p>
+                Minecraft é um jogo de construção e exploração em mundo aberto.
+                Os jogadores podem coletar recursos, construir estruturas,
+                explorar diferentes regiões e enfrentar criaturas.
+            </p>
+        </div>
+
+        <h2>Curiosidades sobre Minecraft</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Criação do jogo</h3>
+                <p>
+                    Minecraft começou a ser desenvolvido em 2009 por
+                    Markus Persson, conhecido como Notch.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>O Creeper</h3>
+                <p>
+                    O Creeper surgiu a partir de um erro no modelo
+                    de um porco durante o desenvolvimento.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Enderman</h3>
+                <p>
+                    Endermen são criaturas altas que conseguem
+                    pegar determinados blocos e se teletransportar.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Herobrine</h3>
+                <p>
+                    Herobrine é uma famosa lenda da comunidade,
+                    mas não faz parte do jogo original.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Redstone</h3>
+                <p>
+                    A Redstone permite criar mecanismos, circuitos,
+                    portas e sistemas automáticos.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Nether</h3>
+                <p>
+                    O Nether é uma dimensão perigosa com criaturas,
+                    estruturas e recursos exclusivos.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>O End</h3>
+                <p>
+                    O End é uma dimensão onde o jogador pode
+                    enfrentar o Dragão Ender.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Diamante</h3>
+                <p>
+                    O diamante pode ser utilizado para criar
+                    equipamentos e ferramentas resistentes.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Aldeias</h3>
+                <p>
+                    Aldeias possuem casas, moradores e diferentes
+                    estruturas que podem ser encontradas durante a exploração.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Sobrevivência</h3>
+                <p>
+                    No modo sobrevivência, o jogador coleta recursos,
+                    cria equipamentos e precisa cuidar da própria sobrevivência.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Construções</h3>
+                <p>
+                    É possível construir casas, castelos, cidades,
+                    fazendas e máquinas.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Encantamentos</h3>
+                <p>
+                    Equipamentos podem receber encantamentos que
+                    fornecem diferentes efeitos e melhorias.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="destaque">
+            <h2>Você sabia?</h2>
+
+            <p>
+                Minecraft permite que cada jogador escolha seu próprio
+                estilo de aventura: explorar, construir, lutar, criar
+                mecanismos ou simplesmente descobrir o mundo.
+            </p>
+        </div>
+
+        <a class="voltar" href="index.html">
+            Voltar para a página inicial
+        </a>
+
+    </section>
+
+    <footer>
+        <p>Central Gamer — Curiosidades e informações sobre jogos</p>
+    </footer>
+
+</body>
+</html>

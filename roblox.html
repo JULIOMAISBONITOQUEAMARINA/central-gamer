@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox - Central Gamer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        header {
+            background: linear-gradient(135deg, #111111, #d00000);
+            color: white;
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+
+        nav {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: #e00000;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #111111, #e00000);
+            color: white;
+            text-align: center;
+            padding: 85px 20px;
+        }
+
+        .hero h2 {
+            font-size: 50px;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        .conteudo {
+            max-width: 1150px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .introducao {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 45px;
+            border-left: 6px solid #c00000;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .introducao h2 {
+            color: #c00000;
+            margin-bottom: 15px;
+        }
+
+        .introducao p {
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .conteudo > h2 {
+            text-align: center;
+            margin-bottom: 35px;
+            font-size: 32px;
+            color: #c00000;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            border-top: 5px solid #c00000;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 10px 25px rgba(192, 0, 0, 0.25);
+        }
+
+        .card h3 {
+            color: #c00000;
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+
+        .card p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .destaque {
+            margin-top: 50px;
+            padding: 35px;
+            background: linear-gradient(135deg, #111111, #d00000);
+            color: white;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .destaque h2 {
+            margin-bottom: 15px;
+            font-size: 30px;
+        }
+
+        .destaque p {
+            line-height: 1.7;
+        }
+
+        .voltar {
+            display: block;
+            width: fit-content;
+            margin: 45px auto;
+            padding: 14px 25px;
+            background: #c00000;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .voltar:hover {
+            background: #111111;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #111111;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .hero h2 {
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Central Gamer</h1>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="minecraft.html">Minecraft</a>
+            <a href="gta.html">GTA</a>
+            <a href="roblox.html">Roblox</a>
+            <a href="terraria.html">Terraria</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Roblox</h2>
+
+        <p>
+            Curiosidades, fatos e informações interessantes
+            sobre Roblox.
+        </p>
+    </section>
+
+    <section class="conteudo">
+
+        <div class="introducao">
+            <h2>Sobre Roblox</h2>
+
+            <p>
+                Roblox é uma plataforma que permite aos usuários
+                jogar e criar experiências. A plataforma reúne
+                diversos tipos de jogos e experiências criadas
+                pela própria comunidade.
+            </p>
+        </div>
+
+        <h2>Curiosidades sobre Roblox</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Criação</h3>
+                <p>
+                    Roblox foi lançado oficialmente em 2006 e
+                    começou como uma plataforma voltada para criação
+                    e compartilhamento de experiências.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Robux</h3>
+                <p>
+                    Robux é a moeda virtual utilizada na plataforma
+                    para adquirir diversos itens e recursos.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Avatares</h3>
+                <p>
+                    Os jogadores podem personalizar seus avatares
+                    com roupas, acessórios e diferentes itens.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Experiências</h3>
+                <p>
+                    Roblox possui uma enorme variedade de experiências
+                    criadas por desenvolvedores e pela comunidade.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Roblox Studio</h3>
+                <p>
+                    Roblox Studio é uma ferramenta utilizada para
+                    criar e desenvolver experiências dentro da plataforma.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Criação de jogos</h3>
+                <p>
+                    Usuários podem aprender desenvolvimento e criar
+                    suas próprias experiências usando ferramentas da plataforma.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Programação</h3>
+                <p>
+                    O desenvolvimento de experiências no Roblox utiliza
+                    a linguagem de programação Luau.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Personalização</h3>
+                <p>
+                    Os jogadores podem modificar seus personagens
+                    e escolher diferentes estilos para seus avatares.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Comunidade</h3>
+                <p>
+                    Uma das principais características do Roblox é sua
+                    comunidade, que cria e compartilha novas experiências.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Diferentes gêneros</h3>
+                <p>
+                    Existem experiências de aventura, corrida, simulação,
+                    estratégia, terror, RPG e muitos outros gêneros.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Itens virtuais</h3>
+                <p>
+                    A plataforma possui diversos itens virtuais que
+                    podem ser utilizados para personalizar os avatares.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Eventos</h3>
+                <p>
+                    Roblox já realizou diversos eventos e atividades
+                    especiais dentro da plataforma ao longo dos anos.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="destaque">
+            <h2>Você sabia?</h2>
+
+            <p>
+                Roblox não é apenas um jogo. Ele também funciona como
+                uma plataforma na qual usuários podem criar, publicar
+                e jogar diferentes experiências.
+            </p>
+        </div>
+
+        <a class="voltar" href="index.html">
+            Voltar para a página inicial
+        </a>
+
+    </section>
+
+    <footer>
+        <p>Central Gamer — Curiosidades e informações sobre jogos</p>
+    </footer>
+
+</body>
+</html>

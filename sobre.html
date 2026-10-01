@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Central Gamer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f3ff;
+            color: #222;
+        }
+
+        header {
+            background: linear-gradient(135deg, #5b21b6, #9333ea);
+            color: white;
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        header h1 {
+            font-size: 32px;
+        }
+
+        nav {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #6c2bd9, #9b4dff);
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .hero h2 {
+            font-size: 44px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 19px;
+        }
+
+        .conteudo {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            padding: 50px 0;
+        }
+
+        .bloco {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            border-top: 5px solid #7c3aed;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .bloco h2 {
+            color: #5b21b6;
+            margin-bottom: 15px;
+        }
+
+        .bloco p {
+            color: #555;
+            line-height: 1.7;
+            font-size: 17px;
+        }
+
+        .botao {
+            display: inline-block;
+            margin-top: 10px;
+            background: #7c3aed;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 9px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .botao:hover {
+            background: #5b21b6;
+        }
+
+        footer {
+            margin-top: 30px;
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .hero h2 {
+                font-size: 34px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Central Gamer</h1>
+
+    <nav>
+        <a href="./index.html">Início</a>
+        <a href="./minecraft.html">Minecraft</a>
+        <a href="./gta.html">GTA</a>
+        <a href="./roblox.html">Roblox</a>
+        <a href="./terraria.html">Terraria</a>
+        <a href="./sobre.html">Sobre</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Sobre a Central Gamer</h2>
+    <p>Um espaço criado para quem gosta de conhecer melhor o mundo dos games.</p>
+</section>
+
+<section class="conteudo">
+
+    <div class="bloco">
+        <h2>O que é a Central Gamer?</h2>
+        <p>
+            A Central Gamer é um site criado para reunir informações,
+            curiosidades e conteúdos sobre diferentes jogos em um só lugar.
+            A ideia é tornar a busca por informações sobre games simples,
+            organizada e fácil de entender.
+        </p>
+    </div>
+
+    <div class="bloco">
+        <h2>Nossa proposta</h2>
+        <p>
+            Queremos criar um espaço agradável para jogadores descobrirem
+            novos jogos, conhecerem detalhes interessantes e explorarem
+            diferentes universos dos games.
+        </p>
+    </div>
+
+    <div class="bloco">
+        <h2>O que você encontra aqui?</h2>
+        <p>
+            A Central Gamer reúne páginas sobre jogos populares como
+            Minecraft, GTA, Roblox, Terraria, Fortnite, Free Fire,
+            Brawl Stars, Valorant, Counter-Strike 2, Among Us,
+            Pokémon e League of Legends.
+        </p>
+    </div>
+
+    <div class="bloco">
+        <h2>Explore a Central Gamer</h2>
+        <p>
+            Escolha um jogo, descubra seus conteúdos e continue explorando
+            o site para conhecer diferentes mundos dos games.
+        </p>
+
+        <a class="botao" href="./index.html">Voltar para o início</a>
+    </div>
+
+</section>
+
+<footer>
+    <p>Central Gamer - Seu espaço para conhecer melhor os games.</p>
+</footer>
+
+</body>
+</html>

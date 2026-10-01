@@ -1,0 +1,378 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortnite - Central Gamer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f3ff;
+            color: #222;
+        }
+
+        header {
+            background: linear-gradient(135deg, #5b21b6, #9333ea);
+            color: white;
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+
+        nav {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 8px;
+        }
+
+        nav a:hover {
+            background: #7e22ce;
+        }
+
+        .hero {
+            background:
+                linear-gradient(rgba(76,29,149,0.75), rgba(147,51,234,0.75)),
+                url("https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1600&q=80");
+
+            background-size: cover;
+            background-position: center;
+
+            color: white;
+            text-align: center;
+            padding: 110px 20px;
+        }
+
+        .hero h2 {
+            font-size: 55px;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 750px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        .conteudo {
+            max-width: 1150px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .introducao {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 45px;
+            border-left: 6px solid #7c3aed;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .introducao h2 {
+            color: #6c2bd9;
+            margin-bottom: 15px;
+        }
+
+        .introducao p {
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .conteudo > h2 {
+            text-align: center;
+            margin-bottom: 35px;
+            font-size: 32px;
+            color: #6c2bd9;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            border-top: 5px solid #9333ea;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 10px 25px rgba(108,43,217,0.25);
+        }
+
+        .card h3 {
+            color: #6c2bd9;
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+
+        .card p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .destaque {
+            margin-top: 50px;
+            padding: 35px;
+            background: linear-gradient(135deg, #6c2bd9, #9333ea);
+            color: white;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .destaque h2 {
+            margin-bottom: 15px;
+            font-size: 30px;
+        }
+
+        .destaque p {
+            line-height: 1.7;
+        }
+
+        .voltar {
+            display: block;
+            width: fit-content;
+            margin: 45px auto;
+            padding: 14px 25px;
+            background: #6c2bd9;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .voltar:hover {
+            background: #5b21b6;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 700px) {
+
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .hero h2 {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <h1>Central Gamer</h1>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="minecraft.html">Minecraft</a>
+        <a href="gta.html">GTA</a>
+        <a href="roblox.html">Roblox</a>
+        <a href="terraria.html">Terraria</a>
+        <a href="fortnite.html">Fortnite</a>
+    </nav>
+
+</header>
+
+
+<section class="hero">
+
+    <h2>Fortnite</h2>
+
+    <p>
+        Curiosidades, fatos e informações interessantes
+        sobre um dos jogos mais conhecidos do mundo.
+    </p>
+
+</section>
+
+
+<section class="conteudo">
+
+    <div class="introducao">
+
+        <h2>Sobre Fortnite</h2>
+
+        <p>
+            Fortnite é um jogo desenvolvido pela Epic Games
+            que reúne diferentes experiências, incluindo modos
+            de batalha, construção e criação. O jogo também é
+            conhecido pelas temporadas, eventos e colaborações.
+        </p>
+
+    </div>
+
+
+    <h2>Curiosidades sobre Fortnite</h2>
+
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Criação</h3>
+            <p>
+                Fortnite foi desenvolvido pela Epic Games e
+                começou sua trajetória em 2017.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Battle Royale</h3>
+            <p>
+                O modo Battle Royale colocou Fortnite entre
+                os jogos mais conhecidos do gênero.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Construção</h3>
+            <p>
+                A construção permite criar estruturas durante
+                as partidas e faz parte da identidade do jogo.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Temporadas</h3>
+            <p>
+                Fortnite utiliza temporadas para adicionar
+                mudanças, conteúdos e novidades ao jogo.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Eventos</h3>
+            <p>
+                O jogo ficou conhecido por realizar eventos
+                especiais dentro do próprio universo.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Personagens</h3>
+            <p>
+                Fortnite possui diversos personagens e skins
+                que podem aparecer nas experiências do jogo.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Colaborações</h3>
+            <p>
+                O jogo já recebeu diversas colaborações com
+                personagens e franquias conhecidas.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Mapa</h3>
+            <p>
+                O mapa do Battle Royale pode mudar ao longo
+                das diferentes temporadas.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Modos de jogo</h3>
+            <p>
+                Fortnite possui diferentes experiências e
+                modos que vão além do Battle Royale.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Fortnite Creative</h3>
+            <p>
+                O modo criativo permite que jogadores criem
+                experiências e mapas próprios.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Unreal Editor</h3>
+            <p>
+                Ferramentas da Epic permitem criar experiências
+                mais avançadas dentro do ecossistema Fortnite.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Comunidade</h3>
+            <p>
+                Fortnite possui uma grande comunidade de jogadores
+                e criadores de conteúdo.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="destaque">
+
+        <h2>Você sabia?</h2>
+
+        <p>
+            Fortnite começou como um projeto de sobrevivência
+            e construção antes de o Battle Royale se tornar
+            uma das principais partes de sua popularidade.
+        </p>
+
+    </div>
+
+
+    <a class="voltar" href="index.html">
+        Voltar para a página inicial
+    </a>
+
+</section>
+
+
+<footer>
+
+    <p>
+        Central Gamer — Curiosidades e informações sobre jogos
+    </p>
+
+</footer>
+
+</body>
+</html>
+```
