@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Central Gamer</title>
+
+    <!-- Google AdSense -->
+    <meta name="google-adsense-account" content="ca-pub-8013596926479577">
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-F10SM6VRX2"></script>
@@ -15,10 +19,6 @@
         gtag('config', 'G-F10SM6VRX2');
     </script>
 
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js?client=ca-pub-8013596926479577"
-        crossorigin="anonymous"></script>
-
     <style>
         * {
             margin: 0;
@@ -28,28 +28,27 @@
         }
 
         body {
-            background: #f4f3ff;
-            color: #222;
+            background: linear-gradient(135deg, #16002e, #3b0878, #6a1bb1);
+            color: white;
+            min-height: 100vh;
         }
 
         header {
-            background: linear-gradient(135deg, #5b21b6, #9333ea);
-            color: white;
-            padding: 25px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 20px;
+            background: rgba(0, 0, 0, 0.35);
+            padding: 20px;
+            text-align: center;
+            backdrop-filter: blur(10px);
         }
 
         header h1 {
-            font-size: 32px;
+            font-size: 38px;
+            margin-bottom: 15px;
         }
 
         nav {
             display: flex;
-            gap: 10px;
+            justify-content: center;
+            gap: 20px;
             flex-wrap: wrap;
         }
 
@@ -57,146 +56,120 @@
             color: white;
             text-decoration: none;
             font-weight: bold;
-            padding: 8px 12px;
-            border-radius: 8px;
             transition: 0.3s;
         }
 
         nav a:hover {
-            background: rgba(255,255,255,0.2);
+            color: #d8a7ff;
         }
 
         .hero {
-            background: linear-gradient(135deg, #6c2bd9, #9b4dff);
-            color: white;
             text-align: center;
-            padding: 80px 20px;
+            padding: 70px 20px 40px;
         }
 
         .hero h2 {
-            font-size: 48px;
+            font-size: 50px;
             margin-bottom: 15px;
         }
 
         .hero p {
             font-size: 20px;
+            color: #e8d8ff;
         }
 
-        .pesquisa {
+        .search-box {
             text-align: center;
-            padding: 35px 20px 10px;
+            margin: 30px 20px;
         }
 
-        .pesquisa input {
-            width: 90%;
-            max-width: 600px;
-            padding: 15px;
-            border: 2px solid #7c3aed;
-            border-radius: 12px;
+        .search-box input {
+            width: min(600px, 90%);
+            padding: 15px 20px;
+            border: none;
+            border-radius: 30px;
             font-size: 16px;
             outline: none;
         }
 
-        .conteudo {
-            width: 90%;
+        .games {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            padding: 40px;
             max-width: 1200px;
             margin: auto;
-            padding: 40px 0;
-        }
-
-        .conteudo h2 {
-            text-align: center;
-            color: #5b21b6;
-            margin-bottom: 30px;
-            font-size: 32px;
-        }
-
-        .jogos {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
         }
 
         .card {
-            background: white;
-            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 18px;
             padding: 25px;
-            border-top: 5px solid #7c3aed;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            text-align: center;
             transition: 0.3s;
+            border: 1px solid rgba(255,255,255,0.15);
         }
 
         .card:hover {
-            transform: translateY(-7px);
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.17);
         }
 
         .card h3 {
-            color: #5b21b6;
-            margin-bottom: 12px;
-            font-size: 22px;
+            margin-bottom: 15px;
+            font-size: 24px;
         }
 
         .card p {
-            color: #555;
-            line-height: 1.5;
+            color: #e5d8f5;
             margin-bottom: 20px;
         }
 
-        .botao {
+        .card a {
             display: inline-block;
-            background: #7c3aed;
+            background: #8f3cff;
             color: white;
+            padding: 12px 22px;
+            border-radius: 25px;
             text-decoration: none;
-            padding: 11px 18px;
-            border-radius: 9px;
             font-weight: bold;
             transition: 0.3s;
         }
 
-        .botao:hover {
-            background: #5b21b6;
+        .card a:hover {
+            background: #b16cff;
         }
 
-        .destaque {
-            margin-top: 50px;
-            background: linear-gradient(135deg, #5b21b6, #9333ea);
-            color: white;
-            padding: 40px;
-            border-radius: 18px;
+        .highlight {
             text-align: center;
+            padding: 50px 20px;
         }
 
-        .destaque h2 {
-            color: white;
+        .highlight h2 {
+            font-size: 32px;
             margin-bottom: 15px;
         }
 
-        footer {
-            margin-top: 50px;
-            background: #111;
-            color: white;
-            text-align: center;
-            padding: 30px;
+        .highlight p {
+            color: #e5d8f5;
+            font-size: 18px;
         }
 
-        @media (max-width: 900px) {
-            .jogos {
-                grid-template-columns: repeat(2, 1fr);
-            }
+        footer {
+            margin-top: 40px;
+            padding: 25px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.35);
+            color: #d8c9e8;
         }
 
         @media (max-width: 600px) {
-            header {
-                justify-content: center;
-                text-align: center;
-            }
-
             .hero h2 {
-                font-size: 36px;
+                font-size: 38px;
             }
 
-            .jogos {
-                grid-template-columns: 1fr;
+            .games {
+                padding: 20px;
             }
         }
     </style>
@@ -204,148 +177,138 @@
 
 <body>
 
-<header>
-    <h1>Central Gamer</h1>
+    <header>
+        <h1>Central Gamer</h1>
 
-    <nav>
-        <a href="./index.html">Início</a>
-        <a href="./minecraft.html">Minecraft</a>
-        <a href="./gta.html">GTA</a>
-        <a href="./roblox.html">Roblox</a>
-        <a href="./terraria.html">Terraria</a>
-        <a href="./sobre.html">Sobre</a>
-    </nav>
-</header>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="minecraft.html">Minecraft</a>
+            <a href="gta.html">GTA</a>
+            <a href="roblox.html">Roblox</a>
+            <a href="terraria.html">Terraria</a>
+            <a href="sobre.html">Sobre</a>
+        </nav>
+    </header>
 
-<section class="hero">
-    <h2>Central Gamer</h2>
-    <p>Curiosidades, informações e conteúdos sobre os jogos mais populares.</p>
-</section>
+    <section class="hero">
+        <h2>Central Gamer</h2>
+        <p>Curiosidades, informações e conteúdos sobre seus jogos favoritos.</p>
+    </section>
 
-<section class="pesquisa">
-    <input
-        type="text"
-        id="pesquisa"
-        placeholder="Pesquisar um jogo..."
-        onkeyup="pesquisarJogo()"
-    >
-</section>
+    <div class="search-box">
+        <input
+            type="text"
+            id="pesquisa"
+            placeholder="Pesquisar jogo..."
+            onkeyup="pesquisarJogo()"
+        >
+    </div>
 
-<section class="conteudo">
-
-    <h2>Jogos em Destaque</h2>
-
-    <div class="jogos" id="listaJogos">
+    <section class="games" id="listaJogos">
 
         <div class="card">
             <h3>Minecraft</h3>
-            <p>Descubra curiosidades e informações sobre Minecraft.</p>
-            <a class="botao" href="./minecraft.html">Ver Minecraft</a>
+            <p>Curiosidades e informações sobre Minecraft.</p>
+            <a href="minecraft.html">Ver página</a>
         </div>
 
         <div class="card">
             <h3>GTA</h3>
-            <p>Conheça curiosidades sobre a série Grand Theft Auto.</p>
-            <a class="botao" href="./gta.html">Ver GTA</a>
+            <p>Curiosidades e informações sobre GTA.</p>
+            <a href="gta.html">Ver página</a>
         </div>
 
         <div class="card">
             <h3>Roblox</h3>
-            <p>Explore curiosidades sobre Roblox e suas experiências.</p>
-            <a class="botao" href="./roblox.html">Ver Roblox</a>
+            <p>Curiosidades e informações sobre Roblox.</p>
+            <a href="roblox.html">Ver página</a>
         </div>
 
         <div class="card">
             <h3>Terraria</h3>
-            <p>Descubra informações sobre o mundo de Terraria.</p>
-            <a class="botao" href="./terraria.html">Ver Terraria</a>
+            <p>Curiosidades e informações sobre Terraria.</p>
+            <a href="terraria.html">Ver página</a>
         </div>
 
         <div class="card">
             <h3>Fortnite</h3>
-            <p>Confira curiosidades sobre Fortnite e seus modos.</p>
-            <a class="botao" href="./fortnite.html">Ver Fortnite</a>
+            <p>Curiosidades e informações sobre Fortnite.</p>
+            <a href="fortnite.html">Ver página</a>
         </div>
 
         <div class="card">
             <h3>Free Fire</h3>
-            <p>Veja curiosidades e informações sobre Free Fire.</p>
-            <a class="botao" href="./freefire.html">Ver Free Fire</a>
+            <p>Curiosidades e informações sobre Free Fire.</p>
+            <a href="freefire.html">Ver página</a>
         </div>
 
         <div class="card">
             <h3>Brawl Stars</h3>
-            <p>Conheça curiosidades sobre Brawl Stars.</p>
-            <a class="botao" href="./brawlstars.html">Ver Brawl Stars</a>
+            <p>Curiosidades e informações sobre Brawl Stars.</p>
+            <a href="brawlstars.html">Ver página</a>
         </div>
 
         <div class="card">
             <h3>Valorant</h3>
-            <p>Descubra informações sobre Valorant.</p>
-            <a class="botao" href="./valorant.html">Ver Valorant</a>
+            <p>Curiosidades e informações sobre Valorant.</p>
+            <a href="valorant.html">Ver página</a>
         </div>
 
         <div class="card">
             <h3>Counter-Strike 2</h3>
-            <p>Confira curiosidades sobre Counter-Strike 2.</p>
-            <a class="botao" href="./cs2.html">Ver CS2</a>
+            <p>Curiosidades e informações sobre CS2.</p>
+            <a href="cs2.html">Ver página</a>
         </div>
 
         <div class="card">
             <h3>Among Us</h3>
-            <p>Descubra curiosidades sobre Among Us.</p>
-            <a class="botao" href="./amongus.html">Ver Among Us</a>
+            <p>Curiosidades e informações sobre Among Us.</p>
+            <a href="amongus.html">Ver página</a>
         </div>
 
         <div class="card">
             <h3>Pokémon</h3>
-            <p>Explore curiosidades sobre o universo Pokémon.</p>
-            <a class="botao" href="./pokemon.html">Ver Pokémon</a>
+            <p>Curiosidades e informações sobre Pokémon.</p>
+            <a href="pokemon.html">Ver página</a>
         </div>
 
         <div class="card">
             <h3>League of Legends</h3>
-            <p>Conheça curiosidades sobre League of Legends.</p>
-            <a class="botao" href="./lol.html">Ver LoL</a>
+            <p>Curiosidades e informações sobre League of Legends.</p>
+            <a href="lol.html">Ver página</a>
         </div>
 
-    </div>
+    </section>
 
-    <div class="destaque">
+    <section class="highlight">
         <h2>Explore o mundo dos games</h2>
-        <p>
-            Escolha um jogo acima e descubra curiosidades,
-            informações e conteúdos especiais na Central Gamer.
-        </p>
-    </div>
+        <p>Descubra curiosidades e informações sobre vários jogos em um só lugar.</p>
+    </section>
 
-</section>
+    <footer>
+        <p>Central Gamer — Seu espaço para descobrir mais sobre games.</p>
+    </footer>
 
-<footer>
-    <p>Central Gamer - Seu espaço para conhecer melhor os games.</p>
-</footer>
+    <script>
+        function pesquisarJogo() {
+            let pesquisa = document
+                .getElementById("pesquisa")
+                .value
+                .toLowerCase();
 
-<script>
-    function pesquisarJogo() {
-        let pesquisa = document
-            .getElementById("pesquisa")
-            .value
-            .toLowerCase()
-            .trim();
+            let jogos = document.querySelectorAll(".card");
 
-        let cards = document.querySelectorAll(".card");
+            jogos.forEach(function(jogo) {
+                let nome = jogo.querySelector("h3").textContent.toLowerCase();
 
-        cards.forEach(function(card) {
-            let nome = card.querySelector("h3").textContent.toLowerCase();
-
-            if (nome.includes(pesquisa)) {
-                card.style.display = "block";
-            } else {
-                card.style.display = "none";
-            }
-        });
-    }
-</script>
+                if (nome.includes(pesquisa)) {
+                    jogo.style.display = "block";
+                } else {
+                    jogo.style.display = "none";
+                }
+            });
+        }
+    </script>
 
 </body>
 </html>
